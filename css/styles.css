@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #007bff;
+    --hover-color: #4db8ff;
+    --focus-color: #c32d78;
+    --background-color: black;
+    --visited-color: rgba(95, 89, 89, 0.526);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background-color);
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100vw;
+}
+
+nav h1 {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav h1 span {
+    padding: 4px 8px;
+    display: inline-block;
+    position: relative;
+}
+
+nav h1 span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: var(--primary-color);
+    bottom: 14px;
+    left: 0;
+    z-index: -1;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.4);
+}
+
+nav ul li a:focus {
+    background-color: var(--focus-color);
+    transform: scale(1.5);
+}
+
+.btn {
+    background-color: var(--hover-color);
+    transform: scale(1.4);
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+    background: url("../images/milky-way.jpg") center/cover no-repeat;
+    animation: HeroZoom 10s infinite alternate ease-in-out;
+
+}
+
+.hero-text {
+    position: absolute;
+    text-align: left;
+    left: 5%;
+    top: 60%;
+    z-index: 1;
+    max-width: 600px;
+}
+
+
+h2 span {
+    animation: ColorChange 2s infinite alternate ease-in-out;
+}
+
+@keyframes HeroZoom {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 110%;
+    }
+
+}
+
+@keyframes ColorChange {
+    0% {
+        color: #bdceda;
+    }
+
+    100% {
+        color: #4db8ff;
+    }
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+
+}
+
+.planet {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planet img {
+    width: 120px;
+    height: 120px;
+}
+
+.planet a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background-color: var(--hover-color);
+    transform: scale(1.4);
+    border-radius: 15px;
+}
+
+.planet a:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.4);
+}
+
+.planet a:focus {
+    background-color: var(--focus-color);
+    transform: scale(1.5);
+}
+
+.planet a:visited {
+    color: var(--visited-color);
+}

@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The System</title>
-    
-    <link rel="stylesheet" href="css/styles.css">
+
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair:wght@300..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1>The System</h1>
-            <ul>
-                <li><a href="#">Planets</a></li>
-                <li><a href="#">Interstellar</a></li>
-                <li><a href="#" class="btn">Contact</a></li>
-            </ul>
-        </nav>
+    <header role="banner">
+        <div class="container">
+            <nav role="navigation" aria-label="Main-Navigation">
+                <h1>The <span class="highlight">System</span></h1>
+                <ul>
+                    <li><a href="#" aria-label="Planet section">Planets</a></li>
+                    <li><a href="#" aria-label="Interstellar">Interstellar</a></li>
+                    <li><a href="#" aria-label="Contact Us" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <p>THE SYSTEM MAGAZINE</p>
-                <h2>Welcome to the Solar System</h2>
-                <p>Take a tour around the coolest stellar system around.</p>
-            </div>
-        </section>
-        <section class="planers">
+
+    <main role="main">
+        <div class="container">
+            <section class="hero" role="region" aria-label="Introduction">
+
+                <div class="hero-text">
+                    <p>THE SYSTEM MAGAZINE</p>
+                    <h2>Welcome to the <span>Solar System</span></h2>
+                    <p>Take a tour around the coolest stellar system around.</p>
+                </div>
+
+            </section>
+        </div>
+
+
+
+
+        <section class="planets" role=region aria-label="Planets">
             <h3>Meet the Locals</h3>
             <div class="grid">
-                <div class="planets">
+                <div class="planet">
                     <img src="images/sun.jpg" alt="The Sun">
-                        <h4>The Sun</h4>
-                        
-                        <a href="#">Learn More</a>
-                    </img>
+                    <h4>The Sun</h4>
+                    <a href="https://en.wikipedia.org/wiki/Sun" aria-label="Learn more about the sun">Learn More</a>
                 </div>
-                <div class="planets">
-                    <img src="images/mercury.jpg" alt="mercury">
-                        <h4>Mercury</h4>
-                        
-                        <a href="#">Learn More</a>
-                    </img>
+                <div class="planet">
+                    <img src="images/mercury.jpg" alt="Mercury">
+                    <h4>Mercury</h4>
+                    <a href="https://en.wikipedia.org/wiki/Mercury" aria-label="Learn more about mercury">Learn More</a>
                 </div>
-                <div class="planets">
-                    <img src="images/venus.jpg" alt="venus">
-                        <h4>Venus</h4>
-                        
-                        <a href="#">Learn More</a>
-                    </img>
+                <div class="planet">
+                    <img src="images/venus.jpg" alt="Venus">
+                    <h4>Venus</h4>
+                    <a href="https://en.wikipedia.org/wiki/Venus" aria-label="Learn more about venus">Learn More</a>
                 </div>
-                <div class="planets">
-                    <img src="images/earth.jpg" alt="earth">
-                        <h4>Earth</h4>
-                        
-                        <a href="#">Learn More</a>
-                    </img>
+                <div class="planet">
+                    <img src="images/earth.jpg" alt="Earth">
+                    <h4>Earth</h4>
+                    <a href="https://en.wikipedia.org/wiki/Earth" aria-label="Learn more about earth">Learn More</a>
                 </div>
-                <div class="planets">
-                    <img src="images/moon.jpg" alt="moon">
-                        <h4>The Moon</h4>
-                        
-                        <a href="#">Learn More</a>
-                    </img>
+                <div class="planet">
+                    <img src="images/moon.jpg" alt="Moon">
+                    <h4>The Moon</h4>
+                    <a href="https://en.wikipedia.org/wiki/Moon" aria-label="Learn more about the moon">Learn More</a>
                 </div>
-                <div class="planets">
-                    <img src="images/mars.jpg" alt="mars">
-                        <h4>Mars</h4>
-                        
-                        <a href="#">Learn More</a>
-                    </img>
+                <div class="planet">
+                    <img src="images/mars.jpg" alt="Mars">
+                    <h4>Mars</h4>
+                    <a href="https://en.wikipedia.org/wiki/Mars" aria-label="Learn more about mars">Learn More</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Copyright 2024-The system</p>
+
+    <footer role="contentinfo">
+        <p>Copyright 2024 - The System</p>
     </footer>
 </body>
-</html> 
+
+</html>
